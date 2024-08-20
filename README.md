@@ -7,7 +7,7 @@
 
 ### 적용된 기능
 1. (https://pokeapi.co/) API사용
-   (https://pokeapi.co/api/v2/pokemon/)사용해서 포켓몬정보를 호출
+   (https://pokeapi.co/api/v2/pokemon/) 사용해서 포켓몬정보를 호출
 2. 포켓몬 검색 기능
 3. 포켓몬의 타입별로 필터링할수있는 버튼 추가
 4. 포켓몬을 클릭시 포켓몬의 정보 화면 출력
