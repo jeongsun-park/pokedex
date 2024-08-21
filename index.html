@@ -3,14 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>POKEDEX</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>POKEDEX</h1>
+    <div class="header">
+      <h1>POKEDEX</h1>
+      <!-- 배경 변경 버튼 -->
+      <button id="themeToggleBtn" class="theme-toggle-btn">
+        <img src="images/sun.png" alt="Toggle Theme" id="themeIcon" />
+      </button>
+    </div>
+
+    <!-- 검색 입력 필드 추가 -->
     <input type="text" id="searchInput" placeholder="포켓몬 이름 검색" />
-    <div class="type-buttons"></div>
-    <!-- 타입 필터 버튼이 위치할 영역 -->
+
+    <!-- 타입 필터 버튼들이 위치할 영역 -->
+    <div class="type-buttons">
+      <button id="all" class="active">
+        <img src="images/all.png" alt="all" style="width: 50px; height: 50px" />
+      </button>
+      <button id="노말">
+        <img
+          src="images/normal.png"
+          alt="노말"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="불꽃">
+        <img
+          src="images/fire.png"
+          alt="불꽃"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="물">
+        <img
+          src="images/water.png"
+          alt="물"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="풀">
+        <img
+          src="images/grass.png"
+          alt="풀"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="비행">
+        <img
+          src="images/flying.png"
+          alt="비행"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="독">
+        <img
+          src="images/poison.png"
+          alt="독"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="전기">
+        <img
+          src="images/electric.png"
+          alt="전기"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="땅">
+        <img
+          src="images/ground.png"
+          alt="땅"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="바위">
+        <img
+          src="images/rock.png"
+          alt="바위"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="에스퍼">
+        <img
+          src="images/psychic.png"
+          alt="에스퍼"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="얼음">
+        <img
+          src="images/ice.png"
+          alt="얼음"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="벌레">
+        <img
+          src="images/bug.png"
+          alt="벌레"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="고스트">
+        <img
+          src="images/ghost.png"
+          alt="고스트"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="강철">
+        <img
+          src="images/steel.png"
+          alt="강철"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="드래곤">
+        <img
+          src="images/dragon.png"
+          alt="드래곤"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="악">
+        <img src="images/dark.png" alt="악" style="width: 50px; height: 50px" />
+      </button>
+      <button id="페어리">
+        <img
+          src="images/fairy.png"
+          alt="페어리"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+      <button id="격투">
+        <img
+          src="images/fighting.png"
+          alt="격투"
+          style="width: 50px; height: 50px"
+        />
+      </button>
+    </div>
+
     <div class="pokemon-list"></div>
     <!-- 포켓몬 목록이 표시될 영역 -->
     <div id="pokemonDetail" class="pokemon-detail"></div>
